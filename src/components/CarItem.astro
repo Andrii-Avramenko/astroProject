@@ -1,0 +1,35 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  car: CollectionEntry<"cars">;
+}
+
+const { make, model, year } = Astro.props.car.data;
+const { id } = Astro.props.car;
+---
+
+<li>
+  <p>
+    {make}
+    {model}
+  </p>
+  <p>{year}</p>
+  <a href={`/cars/${id}`}>Read summary</a>
+</li>
+
+<style>
+  li {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 0 20px;
+    background-color: rgb(194, 194, 194);
+    color: #000;
+    margin: 20px 0;
+  }
+
+  a {
+    text-align: right;
+  }
+</style>

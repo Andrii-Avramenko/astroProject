@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { render } from 'astro:content';
+
+export async function getStaticPaths() {
+    const cars = await getCollection('cars')
+
+    return cars.map((car) => {
+        return {
+            params: { id: car.id },
+            props: { car }
+        }
+    })
+}
+
+const { car } = Astro.props
+const { Content } = await render(car)
+---
+
+<BaseLayout>
+    <div class="content">
+        <Content />
+    </div>
+</BaseLayout>
+
+<style>
+  .content {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 25px 0;
+  }
+</style>

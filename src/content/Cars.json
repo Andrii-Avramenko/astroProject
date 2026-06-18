@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "make": "Toyota",
+    "model": "Camry",
+    "year": 2022,
+    "color": "Silver",
+    "isElectric": false
+  },
+  {
+    "id": 2,
+    "make": "Tesla",
+    "model": "Model 3",
+    "year": 2023,
+    "color": "White",
+    "isElectric": true
+  },
+  {
+    "id": 3,
+    "make": "Ford",
+    "model": "Mustang",
+    "year": 1969,
+    "color": "Red",
+    "isElectric": false
+  },
+  {
+    "id": 4,
+    "make": "BMW",
+    "model": "i4",
+    "year": 2024,
+    "color": "Blue",
+    "isElectric": true
+  },
+  {
+    "id": 5,
+    "make": "Honda",
+    "model": "Civic",
+    "year": 2021,
+    "color": "Black",
+    "isElectric": false
+  },
+  {
+    "id": 6,
+    "make": "Porsche",
+    "model": "911 Carrera",
+    "year": 2023,
+    "color": "Chalk Gray",
+    "isElectric": false
+  },
+  {
+    "id": 7,
+    "make": "Hyundai",
+    "model": "Ioniq 5",
+    "year": 2025,
+    "color": "Cyber Gray",
+    "isElectric": true
+  },
+  {
+    "id": 8,
+    "make": "Chevrolet",
+    "model": "Corvette Stingray",
+    "year": 2022,
+    "color": "Torch Red",
+    "isElectric": false
+  }
+]
